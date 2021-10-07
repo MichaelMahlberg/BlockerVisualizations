@@ -1,0 +1,5 @@
+matplotlib
+squarify
+pandas
+openpyxl
+plotly
