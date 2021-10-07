@@ -1,0 +1,10 @@
+# To respects GDPR we don't want any client-data to be pushed to the server or even put into the git-index
+client-data/
+
+# I'm using vim, so make sure swapfiles stay local
+.*.swp
+
+# make sure the local environment is not checked in
+env
+
+.DS_Store
