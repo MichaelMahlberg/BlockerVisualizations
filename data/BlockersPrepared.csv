@@ -1,0 +1,47 @@
+﻿WorkOrIdleTime;should_have_escalated;Category;Explanation;Duration
+work;short;Meetings;Team Retro;1
+work;short;Meetings;Team Retro;2
+work;short;Supervision Work;Analysis of unexpected outcomes;1,5
+work;short;Rework;Fixing the wiget25 bug after QA;9
+work;short;Rework;Collect additional data for business stakeholders;14
+work;short;Rework;Evaluate additional solutions;16
+work;short;Rework;Create testcase that should have been done in analysis;1,5
+work;short;Unexpected Rework;Re-negotiated agreement with support team;2,5
+work;short;Unexpected Rework;Discovered Additional processes for the test plan;10
+work;short;Unexpected Rework;Evaluate new solution strategy from business owner;26
+work;short;Unexpected Rework;"Found Unclear Workflow Logic; Rework";38
+work;short;Unexpected Rework;Really understand business process;12
+work;short;Unexpected Rework;"Research ""Lunar Landing Module"" SOPs";31,5
+work;short;Unexpected Rework;Checking test for unexpected behaviour;16
+idle;short;Meetings;Interaction with HR-department;1,75
+idle;short;Meetings;Support outside assigned mission;1,5
+idle;short;Wait for external;Process information required to create test plan missing;0,75
+idle;short;Wait for internal;Waiting for approval of acceptance criteria by feature owners;1,5
+idle;short;Wait for internal;Waiting for approval of acceptance criteria by feature owners;1
+idle;short;Wait for internal;Waiting for Code Review to start;1,5
+idle;short;Wait for internal;Waiting for stakeholder to cralify problem;0,5
+idle;short;Wait for internal;Waiting for PR approval;2
+idle;Too long;Deployment;Pipeline not Working;2,5
+idle;Too long;Deployment;Waiting for Deployment;6
+idle;Too long;Deployment;Waiting for Deployment;16
+idle;Too long;Deployment;Waiting for Deployment;8
+idle;Too long;Capacity exausted;Work on widget25 has stop to work on widget36;21,5
+idle;Too long;Capacity exausted;Work on widget36 has stop to work on widget42;15
+idle;Too long;Policy Agreements;Reviewers not Available;7
+idle;Too long;Unplanned Work;Buildpipeline unreliable;4
+idle;Too long;Unplanned Work;Cross-Department Database-Support;8
+idle;Too long;Unplanned Work;Supporting facilities management (power outage);5,5
+idle;Too long;Unplanned Work;Quality checks;4
+idle;Too long;Unplanned Work;Fix plumbing (database engine);3
+idle;Too long;Unplanned Work;handover due to personell issues;56
+idle;Too long;Unplanned Work;Onboarding;25
+idle;Too long;Unplanned Work;Education of new team members;24
+idle;Too long;Wait for external;Acceptance test verification;13
+idle;Too long;Wait for external;Gather background information;12
+idle;Too long;Wait for external;Waiting for Stakeholder;5,75
+idle;Too long;Wait for external;Waiting for supplier;6,5
+idle;Too long;Wait for external;Waiting for contractor;3
+idle;Too long;Wait for internal;Waiting for all people to be available;7,416666667
+idle;Too long;Wait for internal;Waiting for all people to be available;2,5
+idle;Too long;Wait for internal;Waiting for all people to be available;7,25
+idle;Too long;Wait for internal;Waiting for all people to be available;5
