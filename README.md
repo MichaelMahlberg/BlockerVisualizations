@@ -26,11 +26,18 @@ Install the dependencies listed in `requirements.txt`:
 ```shell
 pip install -r requirements.txt
 ```
+## Try it out
+Just rund the tool with the sample data provided
+```shell
+python plotly-blocker-treemap.py -s data/ClientBlockersForTreemap.xlsx
+```
 
 ## Execute: Visualize Blockers in a Treemap
 
+To use it in earnes collect your data in an excel sheet conforming to the sample data provided or create a cvs file containing your blocker data, e.g. in the data subdirectory
+
 1. Export your data to `./data/BlockersPrepared.csv`
-2. `python3 plotly-blocker-treemap.py data/BlcokersPrepared.csv`
+2. `python3 plotly-blocker-treemap.py -s -o report.html --override-field data/only-selected-fields.txt data/BlockersPrepared.csv`
 
 ## Backgroud information:
 The Code has been almost literally copied from various tutorials or google hits. 
