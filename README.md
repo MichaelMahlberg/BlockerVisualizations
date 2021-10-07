@@ -1,14 +1,25 @@
 # Blocker Clustering Treemap    
 
+Thanks to a great idea from [Stefan Boos](https://boos.systems) we started tinkering with treemaps to visualize the relative weight of blockers that occur during the journeys of work-items through a workflow. 
+
+## What is blocker clustering?
+Blocker clustering is an approach to identify bottlenecks and quality issues in the context of the Kanban Method, [popularized by Klaus Leopold since at least 2013](https://www.slideshare.net/klausleopold/blocker-clustering-lkce14).
+
 Visualize blockers by impact during [blocker clustering \[1\]](#ref-1).
 
 ![Screenshot](doc/screenshot.png)
 
 ## GDPR
 
-Note that the `data` directory is excluded from version control for GDPR reasons by means of a `.gitignore` file. This folder is expected to contain the input data.
+Note that the `client-data` directory is excluded from version control for GDPR reasons by means of a `.gitignore` file. This folder is expected to contain the input data.
 
 ## Prerequisites
+
+If you don't have your own way of workging with python it is a good idea to start by isolting the stuff you do here:
+```shell
+python3 -m venv env
+source env/bin/activate
+```
 
 Install the dependencies listed in `requirements.txt`:
 
