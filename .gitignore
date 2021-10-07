@@ -7,4 +7,7 @@ client-data/
 # make sure the local environment is not checked in
 env
 
+# Since we handle so much excel stuff, at least ignore excel temporary working files on macos
+~$*.xlsx
+
 .DS_Store
