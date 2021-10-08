@@ -15,7 +15,7 @@ Note that the `client-data` directory is excluded from version control for GDPR 
 
 ## Prerequisites
 
-If you don't have your own way of workging with python it is a good idea to start by isolting the stuff you do here:
+If you don't have your own way of working with python, it is a good idea to start by isolating the stuff you do for this tool by creating a virtual environment:
 ```shell
 python3 -m venv env
 source env/bin/activate
@@ -34,16 +34,16 @@ python plotly-blocker-treemap.py -s data/ClientBlockersForTreemap.xlsx
 
 ## Execute: Visualize Blockers in a Treemap
 
-To use it in earnes collect your data in an excel sheet conforming to the sample data provided or create a cvs file containing your blocker data, e.g. in the data subdirectory
+To use it in earnest collect your data in an excel sheet conforming to the sample data provided or create a cvs file containing your blocker data, e.g. in the data subdirectory
 
 1. Export your data to `./data/BlockersPrepared.csv`
 2. `python3 plotly-blocker-treemap.py -s -o report.html --override-field data/only-selected-fields.txt data/BlockersPrepared.csv`
 
-## Backgroud information:
+## Background information:
 The Code has been almost literally copied from various tutorials or google hits. 
 
 * The Treemap itself is a slightly modified version of the plotly example that can be found when searching for "nested tree map python", namely [Treemap Charts in Python](https://plotly.com/python/treemaps/) (I tried squarify first, but that is way less versatile)
-* Colorshemes were a bit harder to find, especially because plotly’s internal search didn’t work at the time of writing this, but an extensive explanation can be found at the [Discrete Colors in Python](https://plotly.com/python/discrete-color/) page.
+* Color schemes were a bit harder to find, especially because plotly’s internal search didn’t work at the time of writing this, but an extensive explanation can be found at the [Discrete Colors in Python](https://plotly.com/python/discrete-color/) page.
 * The option handling came almost straight from the first result of searching for "command line parameters in python": [Tutorialmoint’s "Python - Command Line Arguments"](https://www.tutorialspoint.com/python/python_command_line_arguments.htm) but those examples are unfortunately not completely correct, so the rest of the information comes from [this tutorial](https://bip.weizmann.ac.il/course/python/PyMOTW/PyMOTW/docs/getopt/index.html)
 * The Excel import is described in [the official pandas documentation](https://pandas.pydata.org/docs/reference/api/pandas.read_excel.html) and is the first hit when searching for "pandas read excel"
 * [Reading file contents in Python into an array on codegrepper](https://www.codegrepper.com/code-examples/python/how+to+convert+text+file+to+array+in+python) 
