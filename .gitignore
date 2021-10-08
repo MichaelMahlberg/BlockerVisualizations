@@ -1,5 +1,8 @@
 # To respects GDPR we don't want any client-data to be pushed to the server or even put into the git-index
-client-data/
+client-data/*
+
+# However, we want "empty" ignored folders themselves to be created when cloning this repository
+!/**/.gitkeep
 
 # I'm using vim, so make sure swapfiles stay local
 .*.swp
