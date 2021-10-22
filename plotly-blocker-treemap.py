@@ -13,8 +13,8 @@ def usage( reason = '', exit_code = 0 ):
   python plotly-blocker-treemap.py [ -h, --help ] 
   python plotly-blocker-treemap.py [ -i, --info ] [ -s, --show ] 
          [ -t, --tab "name" ] [ --force-csv ] 
-         [ -o, --outfile "name"]
-         [ -f, --override-fields ] <input_file> 
+         [ -o, --outfile "file_name"]
+         [ -f, --override-fields "file_name" ] <input_file> 
 ''')
   sys.exit( exit_code )
 
