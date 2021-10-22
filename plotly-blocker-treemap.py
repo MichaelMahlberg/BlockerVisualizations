@@ -13,6 +13,7 @@ def usage( reason = '', exit_code = 0 ):
   python plotly-blocker-treemap.py [ -h, --help ] 
   python plotly-blocker-treemap.py [ -i, --info ] [ -s, --show ] 
          [ -t, --tab "name" ] [ --force-csv ] 
+         [ -o, --outfile "name"]
          [ -f, --override-fields ] <input_file> 
 ''')
   sys.exit( exit_code )
@@ -36,7 +37,7 @@ show_info = False
 force_csv = False
 
 try:
-  opts, remainder = getopt.getopt(sys.argv[1:],"hist:o:f:",["info","force-csv","tab=","ofile=","override-fields="])
+  opts, remainder = getopt.getopt(sys.argv[1:],"hist:o:f:",["info","force-csv","tab=","outfile=","override-fields="])
 except getopt.GetoptError:
   usage("wrong call", 2)
 
@@ -52,7 +53,7 @@ for opt, arg in opts:
      force_csv = True
   elif opt in ("-i", "--info"):
      show_info = True
-  elif opt in ("-o", "--ofile"):
+  elif opt in ("-o", "--outfile"):
      output_file = arg
   elif opt in ("-t", "--tab"):
      tab_name = arg
