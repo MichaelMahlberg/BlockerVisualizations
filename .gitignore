@@ -14,3 +14,4 @@ env
 ~$*.xlsx
 
 .DS_Store
+/.idea/
