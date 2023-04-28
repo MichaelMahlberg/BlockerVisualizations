@@ -42,20 +42,39 @@ pip install -r requirements.txt
 Just run the tool with the sample data provided
 
 ```shell
-python plotly-blocker-treemap.py -s data/ClientBlockersForTreemap.xlsx
+python ./plotly-blocker-treemap.py -s --override-fields "./data/only-selected-fields.txt" "./data/ClientBlockersForTreemap.xlsx"
 ```
 
 ## Execute: Visualize Blockers in a Treemap
 
+### Using an Excel Data Source
+
 To use it in earnest collect your data in an excel sheet conforming to the
-sample [data](data) provided or create a cvs file containing your blocker data,
-e.g. in the [client-data](client-data) subdirectory
+sample [data](data). Then run the script
 
-1. Export your data to `./client-data/BlockersPrepared.csv` (i.e. the sheet
-   containing the columns `WorkOrIdleTime`, `should_have_escalated`, `Category`,
-   `Explanation` and `Duration`
+```shell
+# Show properties of the table cells
+python ./plotly-blocker-treemap.py -s --info "./data/ClientBlockersForTreemap.xlsx"
 
-1. `python3 plotly-blocker-treemap.py -s -o report.html --override-field data/only-selected-fields.txt client-data/BlockersPrepared.csv`
+# Create the treemap and open it in the browser
+python ./plotly-blocker-treemap.py --outfile report.html --override-fields "./data/only-selected-fields.txt" "./data/ClientBlockersForTreemap.xlsx" 
+```
+
+If your excel sheet contains serveral tables, then use the `--tab "SheetName"`
+parameter to select the sheet for processing.
+
+### Using a CSV Data Source
+
+As an alternative, you can provide a csv file containing your blocker data. For
+the sample in the [data](data) folder, run
+
+```shell
+# Show properties of the table cells
+python .\plotly-blocker-treemap.py -s --force-csv --info "./data/BlockersPrepared.csv"
+
+# Create the treemap and open it in the browser
+python .\plotly-blocker-treemap.py --outfile report.html --force-csv --override-fields "./data/only-selected-fields.txt" "./data/BlockersPrepared.csv" 
+```
 
 ## Description of Columns in the `data/ClientBlockersForTreemap.xlsx` Demo File
 
